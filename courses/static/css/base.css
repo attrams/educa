@@ -175,6 +175,11 @@ textarea {
   width: 300px;
 }
 
+input[type='checkbox'] {
+  width: auto;
+  margin-left: 0;
+}
+
 textarea {
   height: 80px;
 }
