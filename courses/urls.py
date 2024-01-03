@@ -40,7 +40,12 @@ urlpatterns = [
     ),
     path(
         route='content/<int:id>/delete/',
-        view=views.ContentCreateUpdateView.as_view(),
+        view=views.ContentDeleteView.as_view(),
         name='module_content_delete'
+    ),
+    path(
+        route='module/<int:module_id>/',
+        view=views.ModuleContentListView.as_view(),
+        name='module_content_list'
     )
 ]
