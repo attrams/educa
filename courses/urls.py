@@ -28,4 +28,19 @@ urlpatterns = [
         view=views.CourseModuleUpdateView.as_view(),
         name='course_module_update'
     ),
+    path(
+        route='module/<int:module_id>/content/<model_name>/create/',
+        view=views.ContentCreateUpdateView.as_view(),
+        name='module_content_create'
+    ),
+    path(
+        route='module/<int:module_id>/content/<model_name>/<id>/',
+        view=views.ContentCreateUpdateView.as_view(),
+        name='module_content_update'
+    ),
+    path(
+        route='content/<int:id>/delete/',
+        view=views.ContentCreateUpdateView.as_view(),
+        name='module_content_delete'
+    )
 ]
