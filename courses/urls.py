@@ -22,5 +22,10 @@ urlpatterns = [
         route='<pk>/delete/',
         view=views.CourseDeleteView.as_view(),
         name='course_delete'
-    )
+    ),
+    path(
+        route='<pk>/module/',
+        view=views.CourseModuleUpdateView.as_view(),
+        name='course_module_update'
+    ),
 ]
