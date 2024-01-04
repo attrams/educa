@@ -47,5 +47,15 @@ urlpatterns = [
         route='module/<int:module_id>/',
         view=views.ModuleContentListView.as_view(),
         name='module_content_list'
+    ),
+    path(
+        route='module/order/',
+        view=views.ModuleOrderView.as_view(),
+        name='module_order'
+    ),
+    path(
+        route='content/order/',
+        view=views.ContentOrderView.as_view(),
+        name='content_order'
     )
 ]
