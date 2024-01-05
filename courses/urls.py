@@ -57,5 +57,15 @@ urlpatterns = [
         route='content/order/',
         view=views.ContentOrderView.as_view(),
         name='content_order'
-    )
+    ),
+    path(
+        route='subject/<slug:subject>/',
+        view=views.CourseListView.as_view(),
+        name='course_list_subject'
+    ),
+    path(
+        route='<slug:slug>/',
+        view=views.CourseDetailView.as_view(),
+        name='course_detail'
+    ),
 ]
