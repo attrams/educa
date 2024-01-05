@@ -42,6 +42,10 @@ urlpatterns = [
         view=include('courses.urls')
     ),
     path(
+        route='students/',
+        view=include('students.urls')
+    ),
+    path(
         route='',
         view=CourseListView.as_view(),
         name='course_list'
