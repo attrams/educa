@@ -8,4 +8,9 @@ urlpatterns = [
         view=views.StudentRegistrationView.as_view(),
         name='student_registration'
     ),
+    path(
+        route='enroll-course/',
+        view=views.StudentEnrollCourseView.as_view(),
+        name='student_enroll_course'
+    )
 ]
