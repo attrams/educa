@@ -20,6 +20,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 
+from courses.views import CourseListView
+
 urlpatterns = [
     path(
         route='accounts/login/',
@@ -39,6 +41,11 @@ urlpatterns = [
         route='course/',
         view=include('courses.urls')
     ),
+    path(
+        route='',
+        view=CourseListView.as_view(),
+        name='course_list'
+    )
 ]
 
 if settings.DEBUG:
