@@ -13,3 +13,4 @@ This is an online elearning management website built with django.
 
 - [django-braces](https://django-braces.readthedocs.io/en/latest/) - used for `CsrfExemptMixin`.
 - [django-embed-video](https://django-embed-video.readthedocs.io/en/latest/installation.html) - for embeding videos in templates.
+- [pymemcache](https://pypi.org/project/pymemcache/) - for caching
