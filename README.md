@@ -7,7 +7,9 @@ This is an online elearning management website built with django.
 - How to create fixtures in django.
 - How to create custom fields and Abstract Model classes.
 - How to use the html5sortable drag and drop api.
+- Embeding video content in template.
 
 ## Libraries used
 
 - [django-braces](https://django-braces.readthedocs.io/en/latest/) - used for `CsrfExemptMixin`.
+- [django-embed-video](https://django-embed-video.readthedocs.io/en/latest/installation.html) - for embeding videos in templates.
