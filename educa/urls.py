@@ -24,6 +24,10 @@ from courses.views import CourseListView
 
 urlpatterns = [
     path(
+        route='__debug__/',
+        view=include('debug_toolbar.urls')
+    ),
+    path(
         route='accounts/login/',
         view=auth_views.LoginView.as_view(),
         name='login'
