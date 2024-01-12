@@ -15,3 +15,4 @@ This is an online elearning management website built with django.
 - [django-embed-video](https://django-embed-video.readthedocs.io/en/latest/installation.html) - for embeding videos in templates.
 - [pymemcache](https://pypi.org/project/pymemcache/) - for caching.
 - [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/) - for checking cache queries.
+- [redis](https://github.com/redis/redis-py) - for caching.
