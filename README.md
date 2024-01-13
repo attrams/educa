@@ -16,3 +16,4 @@ This is an online elearning management website built with django.
 - [pymemcache](https://pypi.org/project/pymemcache/) - for caching.
 - [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/) - for checking cache queries.
 - [redis](https://github.com/redis/redis-py) - for caching.
+- [djangorestframework](https://www.django-rest-framework.org/) - for building apis.
