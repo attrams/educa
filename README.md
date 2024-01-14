@@ -8,6 +8,7 @@ This is an online elearning management website built with django.
 - How to create custom fields and Abstract Model classes.
 - How to use the html5sortable drag and drop api.
 - Embeding video content in template.
+- How to create restful api using djangorestframework.
 
 ## Libraries used
 
