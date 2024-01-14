@@ -50,6 +50,10 @@ urlpatterns = [
         view=include('students.urls')
     ),
     path(
+        route='api/',
+        view=include('courses.api.urls', namespace='api')
+    ),
+    path(
         route='',
         view=CourseListView.as_view(),
         name='course_list'
