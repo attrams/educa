@@ -1,8 +1,13 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
 
 from . import views
 
 app_name = 'course'
+
+router = routers.DefaultRouter()
+router.register('courses', views.CourseViewSet)
+
 urlpatterns = [
     path(
         route='subjects/',
@@ -18,5 +23,9 @@ urlpatterns = [
         route='courses/<pk>/enroll/',
         view=views.CourseEnrollView.as_view(),
         name='course_enroll'
+    ),
+    path(
+        route='',
+        view=include(router.urls)
     )
 ]
