@@ -32,16 +32,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # custom apps
-    'courses.apps.CoursesConfig',
-    'students.apps.StudentsConfig',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # custom apps
+    'courses.apps.CoursesConfig',
+    'students.apps.StudentsConfig',
+    'chat.apps.ChatConfig',
 
     # installed apps
     'embed_video',
