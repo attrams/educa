@@ -54,6 +54,10 @@ urlpatterns = [
         view=include('courses.api.urls', namespace='api')
     ),
     path(
+        route='chat/',
+        view=include('chat.urls', namespace='chat')
+    ),
+    path(
         route='',
         view=CourseListView.as_view(),
         name='course_list'
