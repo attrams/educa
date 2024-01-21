@@ -164,4 +164,4 @@ REST_FRAMEWORK = {
 }
 
 # ASGI Configuration
-ASGI_APPLICATION = 'educa.routing.application'
+ASGI_APPLICATION = 'educa.asgi.application'
