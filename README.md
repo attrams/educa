@@ -9,6 +9,7 @@ This is an online elearning management website built with django.
 - How to use the html5sortable drag and drop api.
 - Embeding video content in template.
 - How to create restful api using djangorestframework.
+- Creating chat rooms using channels.
 
 ## Libraries used
 
